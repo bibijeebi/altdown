@@ -13,8 +13,5 @@
     "matches": ["<all_urls>"],
     "js": ["content.js"]
   }],
-  "action": {},
-  "background": {
-    "service_worker": "background.js"
-  }
+  "action": {}
 }
