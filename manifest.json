@@ -1,14 +1,20 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Media Downloader",
   "version": "1.0",
   "description": "Download media files by Alt+clicking",
   "permissions": [
-    "downloads",
-    "activeTab"
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
   ],
   "content_scripts": [{
     "matches": ["<all_urls>"],
     "js": ["content.js"]
-  }]
+  }],
+  "action": {},
+  "background": {
+    "service_worker": "background.js"
+  }
 }
